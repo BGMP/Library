@@ -1,5 +1,5 @@
-<h2>Library</h2>
-<h3>Implementación</h3>
+<h1>Library</h1>
+<h2>Implementación</h2>
 <p>
   Esta aplicación de Java Spring Boot fue escrita como resolución a la prueba técnica para desarrolladores planteada
   por la Sociedad Chilena de Autores e Intérpretes Musicales (SCD).
@@ -100,7 +100,7 @@
     </tbody>
 </table>
 
-<h3>Servicios REST</h3>
+<h2>Servicios REST</h2>
 
 <p>La API fue diseñada para mantener actualizados los autores con sus libros correspondientes. Al eliminarse un
     autor con libros asociados, la eliminación es en cascada. Esto quiere decir que los libros asociados al autor
@@ -108,7 +108,7 @@
 </p>
 <p>A continuación, se detallan ejemplos de cómo interactuar con la API implementada en sus diferentes endpoints:</p>
 
-<h4>Author</h4>
+<h3>Author</h3>
 
 <p>Crear (POST <code>http://localhost:8080/api/v1/authors</code>)</p>
 <pre>
@@ -128,7 +128,7 @@
 }
 </pre>
 
-<h4>Book</h4>
+<h3>Book</h3>
 
 <p>Crear (POST <code>http://localhost:8080/api/v1/books)</code></p>
 <pre>
