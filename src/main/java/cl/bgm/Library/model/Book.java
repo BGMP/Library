@@ -2,7 +2,7 @@ package cl.bgm.Library.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import java.time.LocalDate;
+import java.util.Date;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -23,7 +23,7 @@ public class Book {
 
   @Column(name = "publication_date")
   @JsonFormat(pattern = "dd-MM-yyyy")
-  private LocalDate publicationDate;
+  private Date publicationDate;
 
   @Column(name = "pages")
   @NotNull(message = "El número de páginas no puede estar vacío")
@@ -51,7 +51,7 @@ public class Book {
   public Book(
       Long id,
       String title,
-      LocalDate publicationDate,
+      Date publicationDate,
       Integer pages,
       Float price,
       Boolean hardcover,
@@ -81,11 +81,11 @@ public class Book {
     this.title = title;
   }
 
-  public LocalDate getPublicationDate() {
+  public Date getPublicationDate() {
     return publicationDate;
   }
 
-  public void setPublicationDate(LocalDate publicationDate) {
+  public void setPublicationDate(Date publicationDate) {
     this.publicationDate = publicationDate;
   }
 
